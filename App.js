@@ -6,33 +6,13 @@ import {
   View
 } from 'react-native';
 
+import Pin from "./app/components/Pin";
+
 export default class App extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
-        <View style={[styles.boxContainer, styles.boxOne]}>
-          <Text>A</Text>
-          <Text>A</Text>
-          <Text>A</Text>
-        </View>
-        <View style={[styles.boxContainer, styles.boxTwo]}>
-          <Text>B</Text>
-        </View>
-        <View style={[styles.boxContainer, styles.boxThree]}>
-          <Text>C</Text>
-          <Text>C</Text>
-          <Text>C</Text>
-          <Text>C</Text>
-          <Text>C</Text>
-          <Text>C</Text>
-          <Text>C</Text>
-          <Text>C</Text>
-          <Text>C</Text>
-          <Text>C</Text>
-          <Text>C</Text>
-          <Text>C</Text>
-          <Text>C</Text>
-        </View>
+        <Pin />
       </View>
     );
   }
@@ -42,7 +22,8 @@ export default class App extends Component<{}> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'column'
+    justifyContent: 'center',
+    alignItems: 'center', 
   },
   boxContainer: {
     flex: 1,
